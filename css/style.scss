@@ -1,0 +1,139 @@
+//mixin
+@mixin  bg($src , $react : no-repeat , $pos : center) {
+    background:url(../images/#{$src}.png) $react $pos;
+}
+//layout
+html ,body {
+    height:100%;
+}
+.wrap {
+    height:100%;
+}
+.header {
+    display:flex;
+    align-items: center;
+    height:80px;
+    padding:0 40px;
+    border:1px solid #EAEAEA;
+    .search-box {
+        position:relative;
+        padding-left:54px;
+        margin-left:186px;
+        input {
+            width:616px;
+            font-size:20px;
+            text-align: left;
+            font-weight:500;
+            &::placeholder {
+                color:#DDDDDD;
+                font-weight:500;
+            }
+        }
+        button {
+            position:absolute;
+            left:0;
+            top:50%;
+            width:24px;
+            height:24px;
+            transform: translateY(-50%);
+            @include bg(icon_search);
+        }
+    }
+    .util {
+        display:flex;
+        align-items: center;
+        margin-left:auto;
+        button {
+            + button {
+                margin-left:20px;
+            }
+        }
+        .alarm {
+            padding-top:9px;
+        }
+    }
+}
+.contents {
+    height:calc(100% - 80px);
+    padding-left:280px;
+    padding-right:520px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,241,245,1) 100%);
+    .left-menu {
+        position: fixed;
+        left:0;
+        top:80px;
+        width:280px;
+        height:100%;
+        padding:42px 0 0 75px;
+        border-right:1px solid #EAEAEA;
+        background-color:#fff;
+        ul {
+            position:relative;
+            padding-bottom:48px;
+            &::after {
+                display:block;
+                position:absolute;
+                right:0;
+                bottom:0;
+                content:"";
+                height:1px;
+                width:240px;
+                background-color:#EAEAEA;
+            }
+        }
+        li {
+            a {
+                display:flex;
+                position:relative;
+                align-items: center;
+                z-index: 10;
+                @each $obj in menu01 ,menu02 , menu03,menu04 {
+                    &.#{$obj} span{
+                        @include bg(icon_#{$obj} ,$pos: left center);
+                        &.active,&:hover {
+                            color:#333;
+                            @include bg(icon_#{$obj}_on ,$pos: left center);
+                        }
+                    }
+                }
+                span {
+                    position: relative;
+                    display:inline-block;
+                    padding-left:46px;
+                    font-size:20px;
+                    line-height:27px;
+                    font-weight:500;
+                    z-index: 10;
+                    color:#ADADAD;
+                }
+                &.active,&:hover {
+                    &::after {
+                        display:block;
+                        position:absolute;
+                        left:-7px;
+                        top:-2px;
+                        width:34px;
+                        height:30px;
+                        content: "";
+                        @include bg(icon_menu_bg );
+                        z-index: 1;
+                    }
+                }
+                .num {
+                    margin-left:15px;
+                    width:40px;
+                    padding:4px 0;
+                    font-size:14px;
+                    color:#809CFF;
+                    border-radius: 11px;
+                    background-color:#E3EBFF;
+                    text-align: center;
+                }
+            }
+            + li {
+                margin-top:42px;
+            }
+        }
+    }
+}
