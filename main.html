@@ -10,30 +10,31 @@
 <body>
     <div class="wrap">
         <div class="header">
+            <button class="is_mobile toggle-menu" type="button"></button>
             <h1 class="logo">
                 <img src="./images/logo_main.png" alt="logo">
             </h1>
             <div class="search-box">
                 <button type="button"></button>
-                <input type="text" placeholder="Ryan님, 건강한 하루 보내고 계신가요? 궁금한 내용을 검색해 보세요.">
+                <input type="text" placeholder="Ryan님, 궁금한 내용을 검색해 보세요.">
             </div>
             <!-- /.search-box -->
             <div class="util">
-                <button type="button" class="alarm">
+                <a href="#" class="alarm ">
                     <img src="./images/icon_alarm.png" alt="알람 아이콘">
-                </button>
-                <button type="button" class="setting">
+                </a>
+                <a href="#" class="setting">
                     <img src="./images/icon_setting.png" alt="세팅 아이콘">
-                </button>
-                <button type="button" class="my-page">
+                </a>
+                <a href="#" class="my-page">
                     <img src="./images/img_Profile.png" alt="유저 이미지">
-                </button>
+                </a>
             </div>
             <!-- /.util -->
         </div>
         <!-- /.header -->
         <div class="contents">
-            <div class="left-menu">
+            <div class="left-menu is_pc">
                 <ul>
                     <li>
                         <a href="#" class="menu01 active"><span class="active">게시물</span><p class="num">100</p></a>
@@ -48,12 +49,186 @@
                         <a href="#" class="menu04"><span>내 진료 내역</span></a>
                     </li>
                 </ul>
+                <p class="copy">@2020 by Homespital. All Rights reserved.</p>
             </div>
-            dsadsadasd
             <!-- /.left-menu -->
+            <div class="reservation-section is_pc">
+                <a href="" class="direct">예약하기</a>
+                <ul>
+                    <li>
+                        내원진료·왕진진료·건강검진<br>
+                        위의 3가지중 원하시는 진료를 선택하여 주세요.
+                    </li>
+                    <li>
+                        적절한 진료과목을 선택하여 주세요.<br>
+                        검진을 선택한 경우에 원하시는 검진항목을 체크해주세요.
+                    </li>
+                    <li>
+                        예약을 원하시는 날짜와 시간을 선택해 주세요.
+                    </li>
+                    <li>
+                        본인확인 및 예약결제 후 예약완료 확인 및 현황은 아래에 나타납니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="white-borad is_pc">
+                <span class="pic user">
+                    <!-- <img src="./images/img_profile01.png" alt=""> -->
+                </span>
+                <div class="inner">
+                    <div class="textarea">
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Ryan님, 몸의 어디가 불편하시거나 궁금하신게 있으신가요?"></textarea>
+                    </div>
+                </div>
+                <div class="check-group">
+                    <div class="select on">
+                        <span>진찰과목 : 건강검진</span>
+                        <ul>
+                            <li><a href="#">건강검진</a></li>
+                            <li><a href="#">건강검진</a></li>
+                            <li><a href="#">건강검진</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="select">
+                        <span>사진/비디오 첨부</span>
+                    </button>
+                    <div class="select active">
+                        <span>공개설정 : 모두에게</span>
+                        <ul>
+                            <li><a href="#" class="on">모두에게</a></li>
+                            <li><a href="#">병원에게</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="write on">작성하기</button>
+            </div>
+            <div class="white-borad">
+                <a href="" class="more">
+                </a>
+                <div class="user-info">
+                    <span class="pic ">
+                        <!-- <img src="./images/img_profile01.png" alt=""> -->
+                    </span>
+                    <span class="treatment red">
+                        <img src="./images/Page-1.png" alt="">
+                    </span>
+                    <span class="treatment mint">
+                        <img src="./images/Page-2.png" alt="">
+                    </span>
+                    <span class="treatment blue">
+                        <img src="./images/Page-3.png" alt="">
+                    </span>
+                </div>
+                <div class="inner">
+                    <div class="info">
+                        <strong class="name">천우희</strong>
+                        <div class="sub">
+                            <span class="time">16시간전</span>·<span class="range">모두공개중</span>
+                        </div>
+                    </div>
+                    <div class="desc">안녕하세요. 첫 질문이라 어떻게 드려야 할지 잘 모르지만 제 증상을 적어봅니다.
+                        아래의 첫 번째 사진이 오른쪽 고막, 두 번째 사진이 왼쪽 고막입니다.
+
+                        오래전 어렸을 때부터 감기만 걸리면 비염이 심해지고 오른쪽 귀에 중이염이 잘 걸렸거든요… 
+                        근데 어느날부터 오른쪽 귀가 왼쪽보다 잘 안 들려요. 코 막고 바람 불면 좌측은 꿈쩍 도안하는데 우측만 압력이 맞춰지는… 
+                        그런 느낌이 들더라고요. 보통 좌·우측 두 개 다 그런 느낌이 들어야 정상이 아닌가요? 동네 이비인후과 가서 진찰을 받으면 별말씀은 안 하시던데,사진만 봐도 고막이 다르게 보이지 않나요? 저의 우측 고막이 상태가 안 좋나요?
+
+
+                        <img src="./images/img_temp.png" alt=""><img src="./images/img_temp.png" alt=""><img src="./images/img_temp.png" alt="">
+                    </div>
+                </div>
+                <div class="comment">
+                    <span class="pic">
+                        <img src="./images/img_Profile.png" alt="">
+                    </span>
+                    <div class="textarea">
+                        <textarea name="" id="" cols="30" rows="1" placeholder="댓글을 달아주세요."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="white-borad">
+                <a href="" class="more"></a>
+                <div class="user-info">
+                    <span class="pic ">
+                        <!-- <img src="./images/img_profile01.png" alt=""> -->
+                    </span>
+                    <span class="treatment red">
+                        <img src="./images/Page-1.png" alt="">
+                    </span>
+                    <span class="treatment mint">
+                        <img src="./images/Page-2.png" alt="">
+                    </span>
+                    <span class="treatment blue">
+                        <img src="./images/Page-3.png" alt="">
+                    </span>
+                </div>
+                <div class="inner">
+                    <div class="info">
+                        <strong class="name">이재훈</strong>
+                        <div class="sub">
+                            <span class="time">16시간전</span>·<span class="range">모두공개중</span>
+                        </div>
+                    </div>
+                    <div class="desc">안녕하세요.
+                        제가 허리부분 통증이 있어서 척추병원을 갔는데 허리디스크는 없고 그렇게 크게 문제 있는건 없다고 하던데 검색을 해보니 신장이 문제가 있을때도 허리 통증이 온다고 하더군요… 
+                        혹시 신장 문제일수도 있나요? 소변검사로는 신장이 문제가 있는지 나오지는 않는건가요? 
+                        한번 아프면 몇십분 가는듯하네요…. 주로 허리 중앙에서 왼쪽이 아픈편이었는데 오늘은 오른쪽이 꽤 아픕니다. 
+                        통증이 오면 하복부까지 같이 오는 느낌이어서 바늘로 관통하는 느낌이네요… 허리 통증에 관해서는 척추 문제인지 알고만 있다가, 문득 신장의 문제가 있는건 아닌가 궁금해 글을 남깁니다. 감사합니다!
+                    </div>
+                </div>
+                <ul class="comment-list">
+                    <li>
+                        <span class="pic">
+                            <img src="./images/img_profile02.png" alt="">
+                        </span>
+                        <div class="view">
+                            <span class="info"></span>
+                            <p class="desc">안녕하세요. 신장내과 상담의사 심영진입니다. 
+                                직접 진료를 볼 수 없어 현재 상태에 대해 정확한 답변을 드리기는 어렵겠습니다. 
+
+                                소변 검사에서 이상 소견이 발견되지 않았으면 신장이나 콩팥 등 비뇨의학과적 질환보다는 근육이나 인대 등 정형외과나 신경외과적 질환일 가능성이 높습니다. 
+                                통증이 지속되면 정확한 병명 진단을 위해 가까운 정형외과나 신경외과에 내원하셔서 검사 및 진료를 받아보는 것이 가장 좋을 것으로 사료됩니다. 
+                                연계진료로 정형외과나 신경외과진료를 안내드립니다.
+                            </p>
+                        </div>
+                        <div class="comment-util">
+                            <span>답글1</span> · 
+                            <span><a href="#">답글달기</a></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="pic">
+                                    <img src="./images/img_profile03.png" alt="">
+                                </span>
+                                <div class="view">
+                                    <span class="info"></span>
+                                    <p class="desc">감사합니다. 안내는 잘 받았습니다~! 
+                                        전문가가 이렇게 소개해주시니 시간과 비용도 절약되고 너무 좋네요. 방금 예약신청 드렸습니다.
+                                    </p>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="comment">
+                    <span class="pic">
+                        <img src="./images/img_Profile.png" alt="">
+                    </span>
+                    <div class="textarea">
+                        <textarea name="" id="" cols="30" rows="1" placeholder="댓글을 달아주세요."></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /.contents -->
+        <div class="mobile-tab is_mobile">
+            <span>작성하기</span>
+            <span>연락하기</span>
+        </div>
     </div>
     <!-- /.wrap -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html> 
