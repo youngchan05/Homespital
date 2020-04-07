@@ -55,21 +55,222 @@
             <div class="reservation-section is_pc">
                 <a href="" class="direct">예약하기</a>
                 <ul>
-                    <li>
-                        내원진료·왕진진료·건강검진<br>
-                        위의 3가지중 원하시는 진료를 선택하여 주세요.
+                    <li class="on">
+                        <p>
+                            내원진료·왕진진료·건강검진<br>
+                            위의 3가지중 원하시는 진료를 선택하여 주세요.
+                        </p>
+                        <span>진료 선택 완료</span>
+                    </li>
+                    <li class="result">
+                        <p>
+                            적절한 진료과목을 선택하여 주세요.<br>
+                            검진을 선택한 경우에 원하시는 검진항목을 체크해주세요.
+                        </p>
+                        <span>진료과목 선택 완료</span>
                     </li>
                     <li>
-                        적절한 진료과목을 선택하여 주세요.<br>
-                        검진을 선택한 경우에 원하시는 검진항목을 체크해주세요.
+                        <p>
+                            예약을 원하시는 날짜와 시간을 선택해 주세요.
+                        </p>
+                        <span>예약 날짜, 시간 선택 완료</span>
                     </li>
                     <li>
-                        예약을 원하시는 날짜와 시간을 선택해 주세요.
-                    </li>
-                    <li>
-                        본인확인 및 예약결제 후 예약완료 확인 및 현황은 아래에 나타납니다.
+                        <p>본인확인 및 예약결제 후 예약완료 확인 및 현황은 아래에 나타납니다.</p>
+                        <span>진료 선택 완료</span>
                     </li>
                 </ul>
+                <div class="list-wrap">
+                    <div class="list-box">
+                        <p>2020. 3. 26 (목) 오전 11:00<br> <strong>내과 내원진료 </strong> <button type="button"></button></p>
+                    </div>
+                </div>
+                <div class="reservation-step">
+                    <!-- 활성화 시 클래스 activ 추가해주세요-->
+                    <div class="step-header">
+                        <div class="icon-group">
+                            <span class=>
+                                <img src="./images/icon_step01.png" alt="">
+                            </span>
+                        </div>
+                        <strong>
+                            Ryan님의<br>예약을 도와드리겠습니다
+                        </strong>
+                    </div>
+                    <div class="step-cont">
+                        <div class="step01">
+                            <div class="select-list">
+                                <button type="button" class="icon_step01_1 active">
+                                    <i></i>
+                                    <span>내원진료</span>
+                                </button>
+                                <button type="button" class="icon_step01_2">
+                                    <i></i>
+                                    <span>왕진진료</span>
+                                </button>
+                                <button type="button" class="icon_step01_3">
+                                    <i></i>
+                                    <span>건강검진</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="step02">
+                            <div class="select-list">
+                                <button type="button" class="icon_step02_1 active">
+                                    <i></i>
+                                    <span>내과</span>
+                                </button>
+                                <button type="button" class="icon_step02_2">
+                                    <i></i>
+                                    <span>이비인후과</span>
+                                </button>
+                                <button type="button" class="icon_step02_3">
+                                    <i></i>
+                                    <span>안과</span>
+                                </button>
+                                <button type="button" class="icon_step02_4">
+                                    <i></i>
+                                    <span>소화기과</span>
+                                </button>
+                                <button type="button" class="icon_step02_5">
+                                    <i></i>
+                                    <span>피부과</span>
+                                </button>
+                                <button type="button" class="icon_step02_6">
+                                    <i></i>
+                                    <span>정형외가</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="step03">
+                            <div class="accordion-wrap">
+                                <dl class="open">
+                                    <dt class="cal">3. 26 목요일 <button type="button"></button></dt>
+                                    <dd>
+                                        <div class="select-info">
+                                            <div class="month">
+                                                <button type="button" class="prev"></button>
+                                                <span>2020.03</span>
+                                                <button type="button" class="next"></button>
+                                            </div>
+                                            <div class="check-box">
+                                                <span>선택</span>
+                                                <span class="disabled">불가</span>
+                                            </div>
+                                        </div>
+                                        <div class="cal-wrap">
+                                            <ul class="day">
+                                                <li>일</li>
+                                                <li>월</li>
+                                                <li>화</li>
+                                                <li>수</li>
+                                                <li>목</li>
+                                                <li>금</li>
+                                                <li>토</li>
+                                            </ul>
+                                            <ul class="nums">
+                                                <li><button type="button" disabled class="red">1</button></li>
+                                                <li><button type="button" disabled>2</button></li>
+                                                <li><button type="button" disabled>3</button></li>
+                                                <li><button type="button" disabled>4</button></li>
+                                                <li><button type="button" disabled>5</button></li>
+                                                <li><button type="button" disabled>6</button></li>
+                                                <li><button type="button" disabled class="blue">7</button></li>
+                                                <li><button type="button" disabled class="red">8</button></li>
+                                                <li><button type="button" disabled>9</button></li>
+                                                <li><button type="button" disabled>10</button></li>
+                                                <li><button type="button" disabled>11</button></li>
+                                                <li><button type="button" disabled>12</button></li>
+                                                <li><button type="button" disabled>13</button></li>
+                                                <li><button type="button" disabled class="blue">14</button></li>
+                                                <li><button type="button" class="red">15</button></li>
+                                                <li><button type="button" class="active">16</button></li>
+                                                <li><button type="button">17</button></li>
+                                                <li><button type="button">18</button></li>
+                                                <li><button type="button">19</button></li>
+                                                <li><button type="button">20</button></li>
+                                                <li><button type="button" class="blue">21</button></li>
+                                                <li><button type="button" class="red">22</button></li>
+                                                <li><button type="button">23</button></li>
+                                                <li><button type="button">24</button></li>
+                                                <li><button type="button">25</button></li>
+                                                <li><button type="button">26</button></li>
+                                                <li><button type="button">27</button></li>
+                                                <li><button type="button" class="blue">28</button></li>
+                                                <li><button type="button" class="red">29</button></li>
+                                                <li><button type="button">30</button></li>
+                                                <li><button type="button">31</button></li>
+                                                <li><button type="button">1</button></li>
+                                                <li><button type="button">2</button></li>
+                                                <li><button type="button">3</button></li>
+                                                <li><button type="button" class="blue">4</button></li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt class="clock">시간 선택<button type="button" class="on"></button></dt>
+                                    <dd>
+                                        <div class="times">
+                                            <div class="morning">
+                                                <p class="tit">오전</p>
+                                                <button type="button" disabled>11:00</button>
+                                                <button type="button" class="active">11:30</button>
+                                            </div>
+                                            <div class="afternoon">
+                                                <p class="tit">오후</p>
+                                                <button type="button">12:00</button>
+                                                <button type="button">12:30</button>
+                                                <button type="button">01:00</button>
+                                                <button type="button">01:30</button>
+                                                <button type="button">02:00</button>
+                                                <button type="button">02:30</button>
+                                                <button type="button">03:00</button>
+                                                <button type="button">03:30</button>
+                                                <button type="button">04:00</button>
+                                                <button type="button">04:30</button>
+                                                <button type="button">05:00</button>
+                                                <button type="button">05:30</button>
+                                                <button type="button">06:00</button>
+                                                <button type="button">06:30</button>
+                                                <button type="button">07:00</button>
+                                            </div>
+                                        </div>
+                                        <div class="select-info">
+                                            <div class="check-box">
+                                                <span>선택</span>
+                                                <span class="disabled">불가</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="result-text">
+                                <strong>3.26 목요일<br>오전 11:00</strong>
+                                <p>위의 스케줄로 예약결제를 <span>다음단계</span><br>에서 진행해 드리겠습니다.</p>
+                            </div>
+                        </div>
+                        <div class="step04">
+                            <div class="select-list">
+                                <button type="button" class="icon_step04_1 active">
+                                    <i></i>
+                                    <span>본인확인</span>
+                                </button>
+                                <button type="button" class="icon_step04_2">
+                                    <i></i>
+                                    <span>예약 결제하기 <br>(10,000원)</span>
+                                </button>
+                            </div>
+                            <p class="info">
+                                본인확인은 건강보험 확인을 위해 사용됩니다.<br> 건강검진은 선결제, 그 외 진료예약은 예약금 선결제로 이뤄집니다.
+                            </p>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button">이전단계</button>
+                            <button type="button" class="on">다음단계</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="white-borad is_pc">
                 <span class="pic user">
@@ -92,7 +293,7 @@
                     <button type="button" class="select">
                         <span>사진/비디오 첨부</span>
                     </button>
-                    <div class="select active">
+                    <div class="select">
                         <span>공개설정 : 모두에게</span>
                         <ul>
                             <li><a href="#" class="on">모두에게</a></li>
@@ -228,6 +429,13 @@
         </div>
     </div>
     <!-- /.wrap -->
+    <div class="pop-wrap active">
+        <div class="pop">
+            <strong class="tit">Ryan님의<br> 3.26(목) 오전 11: 00 내과 내원진료 <br>예약이 완료되었습니다.</strong>
+            <p>자세한 예약사항은 우측 예약하기 하단과<br> 좌측 나의진료 내역에서 확인하실수 있습니다.<br> 그밖의 문의사항은 피드를 통해 연락주세요.<br> 감사합니다.</p>
+            <button type="button" class="close"></button>
+        </div>
+    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/common.js"></script>
 </body>

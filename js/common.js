@@ -19,4 +19,19 @@ $(function(){
             }
         });
     }
+    function accordion(){
+        $selector = $('.accordion-wrap dt button');
+        $selector.on('click',function(){
+            $(this).toggleClass('on');
+            $(this).parents('dl').toggleClass('open');
+        })
+    }
+    accordion();
+    function popUp(){
+        $selector = $('.close');
+        $selector.on('click',function(){
+            $(this).parents().parents().removeClass('active');
+        })
+    }
+    popUp();
 })
