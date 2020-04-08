@@ -20,7 +20,8 @@
             </div>
             <!-- /.search-box -->
             <div class="util">
-                <a href="#" class="alarm ">
+                <a href="#" class="alarm on">
+                    <!--알람 활성화시 클래스 on 추가됩니다.-->
                     <img src="./images/icon_alarm.png" alt="알람 아이콘">
                 </a>
                 <a href="#" class="setting">
@@ -85,8 +86,8 @@
                         <p>2020. 3. 26 (목) 오전 11:00<br> <strong>내과 내원진료 </strong> <button type="button"></button></p>
                     </div>
                 </div>
-                <div class="reservation-step">
-                    <!-- 활성화 시 클래스 activ 추가해주세요-->
+                <div class="reservation-step active">
+                    <!-- 활성화 시 클래스 active 추가해주세요-->
                     <div class="step-header">
                         <div class="icon-group">
                             <span class=>
@@ -98,10 +99,11 @@
                         </strong>
                     </div>
                     <div class="step-cont">
-                        <div class="step01">
+                        <div class="step01 on">
                             <div class="select-list">
                                 <button type="button" class="icon_step01_1 active">
-                                    <i></i>
+                                    <i>
+                                    </i>
                                     <span>내원진료</span>
                                 </button>
                                 <button type="button" class="icon_step01_2">
@@ -383,7 +385,7 @@
                             <img src="./images/img_profile02.png" alt="">
                         </span>
                         <div class="view">
-                            <span class="info"></span>
+                            <span class="info">1주일 전</span> <!--0408-->
                             <p class="desc">안녕하세요. 신장내과 상담의사 심영진입니다. 
                                 직접 진료를 볼 수 없어 현재 상태에 대해 정확한 답변을 드리기는 어렵겠습니다. 
 
@@ -429,7 +431,7 @@
         </div>
     </div>
     <!-- /.wrap -->
-    <div class="pop-wrap active">
+    <div class="pop-wrap">
         <div class="pop">
             <strong class="tit">Ryan님의<br> 3.26(목) 오전 11: 00 내과 내원진료 <br>예약이 완료되었습니다.</strong>
             <p>자세한 예약사항은 우측 예약하기 하단과<br> 좌측 나의진료 내역에서 확인하실수 있습니다.<br> 그밖의 문의사항은 피드를 통해 연락주세요.<br> 감사합니다.</p>

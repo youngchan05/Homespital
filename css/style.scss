@@ -1,6 +1,6 @@
 //mixin
-@mixin  bg($src , $react : no-repeat , $pos : center) {
-    background:url(../images/#{$src}.png) $react $pos;
+@mixin  bg($src , $react : no-repeat , $pos : center ,$type :png) {
+    background:url(../images/#{$src}.#{$type}) $react $pos;
 }
 //variable
 $headerHeight : 80px;
@@ -126,7 +126,22 @@ html ,body {
             }
         }
         .alarm {
-            padding-top:9px;
+            position:relative;
+            &.on {
+                &::after{
+                    display:block;
+                    position:absolute;
+                    right:0;
+                    bottom:0;
+                    transform: translateY(-50%);
+                    width:9px;
+                    height:9px;
+                    content:"";
+                    background-color:#809CFF;
+                    box-shadow: 0px 6px 3px #657DA840;
+                    border-radius: 100%;
+                }
+            }
         }
     }
 }
@@ -609,7 +624,7 @@ html ,body {
                     icon_step04_1 , icon_step04_2   {
                         &.#{$obj}{
                             i {
-                                @include bg(#{$obj});
+                                @include bg(#{$obj} ,$type:svg);
                             }
                             &.active {
                                 span {
@@ -618,7 +633,7 @@ html ,body {
                                 i {
                                     border:2px solid #5577F0;
                                     border-radius: 10px;
-                                    @include bg(#{$obj}_on);
+                                    @include bg(#{$obj}_on,$type:svg);
                                 }
                             }
                         }
@@ -684,7 +699,7 @@ html ,body {
                 }
             }
         }
-        &.acitve {
+        &.active {
             display:block;
         }
     }
