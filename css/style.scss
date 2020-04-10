@@ -495,7 +495,27 @@ html ,body {
             padding:86px 0 60px 0;
             background-color:#809CFF;
             .icon-group {
-                margin-bottom:6px;
+                position:relative;
+                margin-bottom:10px;
+                span {
+                    img {
+                        width:9%;
+                    }
+                }
+                .list {
+                    display:flex;
+                    width: 40%;
+                    justify-content: flex-end;
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    img {
+                        opacity: .5;
+                        + img {
+                            margin-left:30px;
+                        }
+                    }
+                }
             }
             strong {
                 font-size:30px;
@@ -505,76 +525,16 @@ html ,body {
                 font-weight: 700;
             }
         }
+        > div {
+            display:none;
+            &.on {
+                display:block;
+            }
+        }
         .step-cont {
             position:relative;
             padding:40px 84px 100px 84px;
             background-color: #fff;
-            > div {
-                display:none;
-                &.on {
-                    display:block;
-                }
-            }
-            .step02 {
-                .select-list  {
-                    margin-left:-47px;
-                    margin-top:-10px;
-                    button {
-                        width:100px;
-                        padding-top:112px;
-                        margin-left:47px;
-                        margin-top:10px;
-                        i {
-                            width:100px;
-                            height:100px;
-                        }
-                        & + button {
-                            margin-left:47px;
-                        }
-                    }
-                }
-            }
-            .step04 {
-                .select-list {
-                    justify-content: center;
-                    button {
-                        i {
-                            border:2px solid #5577F0 !important;
-                            border-radius: 10px;
-                        }
-                        span {
-                            line-height:30px;
-                            color:#5577F0;
-                        }
-                        &.active {
-                            i{
-                                background-color:#809CFF !important;
-                                border-color:#809CFF !important;
-                            }
-                            &::after{
-                                display:block;
-                                position:absolute;
-                                left:50%;
-                                top:0;
-                                transform: translate(-50% , -50%);
-                                width:47px;
-                                height:47px;
-                                content:"";
-                                border-radius: 100%;
-                                @include bg(bg_result);
-                                background-size:18px auto;
-                                background-color:#809CFF;
-                            }
-                        }
-                    }
-                }
-                .info {
-                    margin-top:30px;
-                    font-size:20px;
-                    line-height:32px;
-                    color:#ADADAD;
-                }
-            }
             .btn-group {
                 display:flex;
                 position:absolute;
@@ -598,6 +558,7 @@ html ,body {
             .select-list {
                 display:flex;
                 flex-wrap:wrap;
+                justify-content: center;
                 button {
                     position:relative;
                     width:120px;
@@ -697,6 +658,67 @@ html ,body {
                         font-weight:500;
                     }
                 }
+            }
+        }
+        .step02 {
+            .select-list  {
+                margin-left:-47px;
+                margin-top:-10px;
+                justify-content: flex-start;
+                button {
+                    width:100px;
+                    padding-top:112px;
+                    margin-left:47px;
+                    margin-top:10px;
+                    i {
+                        width:100px;
+                        height:100px;
+                    }
+                    & + button {
+                        margin-left:47px;
+                    }
+                }
+            }
+        }
+        .step04 {
+            .select-list {
+                justify-content: center;
+                button {
+                    i {
+                        border:2px solid #5577F0 !important;
+                        border-radius: 10px;
+                    }
+                    span {
+                        line-height:30px;
+                        color:#5577F0;
+                    }
+                    &.active {
+                        i{
+                            background-color:#809CFF !important;
+                            border-color:#809CFF !important;
+                        }
+                        &::after{
+                            display:block;
+                            position:absolute;
+                            left:50%;
+                            top:0;
+                            transform: translate(-50% , -50%);
+                            width:47px;
+                            height:47px;
+                            content:"";
+                            border-radius: 100%;
+                            @include bg(bg_result);
+                            background-size:18px auto;
+                            background-color:#809CFF;
+                        }
+                    }
+                }
+            }
+            .info {
+                margin-top:30px;
+                font-size:20px;
+                line-height:32px;
+                color:#ADADAD;
             }
         }
         &.active {
