@@ -186,6 +186,8 @@ html, body { overflow: hidden; height: 100%; }
 
 .contents .reservation-step .step-header .icon-group .list img + img { margin-left: 30px; }
 
+.contents .reservation-step .step-header .mobile-info { display: none; }
+
 .contents .reservation-step .step-header strong { font-size: 30px; line-height: 38px; letter-spacing: -0.6px; color: #FCFDFD; font-weight: 700; }
 
 .contents .reservation-step > div { display: none; }
@@ -306,6 +308,8 @@ html, body { overflow: hidden; height: 100%; }
 
 .contents .reservation-step .step02 .select-list button + button { margin-left: 47px; }
 
+.contents .reservation-step .step04 .btn-group { display: none; }
+
 .contents .reservation-step .step04 .select-list { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .contents .reservation-step .step04 .select-list button i { border: 2px solid #5577F0 !important; border-radius: 10px; }
@@ -346,13 +350,25 @@ html, body { overflow: hidden; height: 100%; }
 
 .pop-wrap .pop p { margin-top: 60px; font-size: 20px; line-height: 26px; color: #fff; }
 
-.pop-wrap .pop .close { position: absolute; right: 30px; top: 30px; width: 30px; height: 30px; background: url(../images/btn_close.png) no-repeat center; }
+.pop-wrap .pop .close { position: absolute; right: 30px; top: 30px; width: 30px; height: 30px; background: url(../images/btn_close.png) no-repeat center; text-indent: -9999px; overflow: hidden; }
 
 .pop-wrap.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .white-borad { position: relative; padding: 57px 40px 20px 40px; background-color: #fff; -webkit-box-shadow: 0px 20px 40px #657DA833; box-shadow: 0px 20px 40px #657DA833; }
 
-.white-borad .more { position: absolute; right: 30px; top: 40px; display: inline-block; width: 5px; height: 25px; background: url(../images/bg_more.png) no-repeat center; }
+.white-borad .more { position: absolute; right: 30px; top: 40px; }
+
+.white-borad .more > button { width: 5px; height: 25px; background: url(../images/bg_more.png) no-repeat center; }
+
+.white-borad .more .list { display: none; position: absolute; left: -130px; top: 24px; width: 134px; padding: 10px 0; background-color: #E3EBFF; -webkit-box-shadow: 0px 20px 40px #657DA833; box-shadow: 0px 20px 40px #657DA833; border-radius: 10px; }
+
+.white-borad .more .list button { width: 100%; padding: 4px 0 4px 12px; font-size: 14px; text-align: left; color: #809CFF; }
+
+.white-borad .more .list button:hover { background-color: #fff; }
+
+.white-borad .more .list.active { display: block; }
+
+.white-borad .more .list .cancel { display: none; }
 
 .white-borad .user-info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; left: -50px; top: 20px; }
 
@@ -368,15 +384,15 @@ html, body { overflow: hidden; height: 100%; }
 
 .white-borad .user-info .treatment.mint { background-color: #9BFEF9; }
 
-.white-borad .textarea textarea { width: 100%; border: none; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 18px; line-height: 23px; color: #333; }
+.white-borad .textarea textarea, .white-borad .textarea input { width: 100%; border: none; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 18px; line-height: 23px; color: #333; }
 
-.white-borad .textarea textarea::-webkit-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
+.white-borad .textarea textarea::-webkit-input-placeholder, .white-borad .textarea input::-webkit-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
 
-.white-borad .textarea textarea:-ms-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
+.white-borad .textarea textarea:-ms-input-placeholder, .white-borad .textarea input:-ms-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
 
-.white-borad .textarea textarea::-ms-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
+.white-borad .textarea textarea::-ms-input-placeholder, .white-borad .textarea input::-ms-input-placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
 
-.white-borad .textarea textarea::placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
+.white-borad .textarea textarea::placeholder, .white-borad .textarea input::placeholder { font-size: 20px; color: #DDD; font-weight: 300; }
 
 .white-borad .inner { padding-left: 20px; margin-bottom: 20px; border-bottom: 1px solid #EAEAEA; }
 
@@ -402,9 +418,15 @@ html, body { overflow: hidden; height: 100%; }
 
 .white-borad .comment .pic { position: absolute; left: 0; top: 0; }
 
-.white-borad .comment .textarea { background-color: #F4F4F4; border-radius: 10px; }
+.white-borad .comment .textarea { position: relative; background-color: #F4F4F4; border-radius: 10px; }
 
-.white-borad .comment .textarea textarea { padding: 15px 15px; font-size: 18px; color: #333; background-color: transparent; }
+.white-borad .comment .textarea textarea, .white-borad .comment .textarea input { text-align: left; padding: 15px 60px 15px 15px; font-size: 18px; color: #333; background-color: transparent; border: 1px solid transparent; border-radius: 10px; }
+
+.white-borad .comment .textarea textarea:focus, .white-borad .comment .textarea input:focus { background-color: #fff; border-color: #C3D0FF; }
+
+.white-borad .comment .textarea textarea:focus + button, .white-borad .comment .textarea input:focus + button { display: block; }
+
+.white-borad .comment .textarea button { display: none; position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); font-size: 20px; color: #5577F0; }
 
 .comment-list { border-bottom: 1px solid #EAEAEA; padding-bottom: 20px; margin-bottom: 20px; }
 
@@ -423,6 +445,10 @@ html, body { overflow: hidden; height: 100%; }
 .comment-list li .comment-util { margin-top: 20px; padding-left: 20px; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
 .comment-list li .comment-util span { font-size: 14px; color: #809CFF; }
+
+.comment-list li .comment { width: 100%; padding-top: 20px; margin-top: 20px; border-top: 1px solid #EAEAEA; }
+
+.comment-list li .comment .pic { top: 20px; }
 
 @media all and (max-width: 764px) { .is_pc { display: none; }
   .is_mobile { display: block; }
@@ -446,8 +472,65 @@ html, body { overflow: hidden; height: 100%; }
   .header.fix .logo { display: none; }
   .header.fix + .contents { height: calc(100% - 56px); }
   .contents { height: calc(100% - 86px); padding: 30px 16px 0 38px; }
+  .contents .left-menu { display: none; left: 0; top: 0; width: 100%; height: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0; z-index: 10; }
+  .contents .left-menu ul { width: 207px; }
+  .contents .left-menu button { position: absolute; left: 0; bottom: 4px; width: 100%; text-align: center; font-size: 30px; font-weight: 500; }
+  .contents .left-menu.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .contents .reservation-section { display: none; right: 0; top: 0; width: 100%; height: 100%; padding: 0  27px 100px 27px; background-color: #fff; overflow: auto; }
+  .contents .reservation-section .direct, .contents .reservation-section .list-wrap { display: none; }
+  .contents .reservation-section .mobile-header { margin-top: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .contents .reservation-section .mobile-header strong { display: inline-block; margin: 0 auto; font-size: 20px; font-weight: 700; color: #333; }
+  .contents .reservation-section .mobile-header button { font-size: 14px; color: #ADADAD; }
+  .contents .reservation-section > ul { position: relative; margin-top: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .contents .reservation-section > ul::after { display: block; position: absolute; left: 0; top: 50%; width: 100%; height: 4px; -webkit-transform: translateY(-50%); transform: translateY(-50%); background-color: #AABBF5; content: ""; }
+  .contents .reservation-section > ul li { width: 37px; height: 37px; padding: 0; }
+  .contents .reservation-section > ul li p, .contents .reservation-section > ul li span { display: none; }
+  .contents .reservation-section > ul li.result span { display: none; }
+  .contents .reservation-section > ul li + li { margin-left: auto; margin-top: 0; }
+  .contents .reservation-section > ul li.on::after { width: 37px; padding: 4px 0 7px 0; border: none; }
+  .contents .reservation-section.active { display: block; }
+  .contents .reservation-step { display: block; position: static; width: 100%; height: auto; max-height: none; margin-top: 50px; -webkit-box-shadow: none; box-shadow: none; overflow: visible; }
+  .contents .reservation-step .step-header { padding: 0; background-color: transparent; }
+  .contents .reservation-step .step-header .icon-group, .contents .reservation-step .step-header strong { display: none; }
+  .contents .reservation-step .step-header .mobile-info { display: block; margin-bottom: 48px; font-size: 14px; line-height: 18px; color: #333; font-weight: 500; }
+  .contents .reservation-step .step02 .select-list { margin: 0; }
+  .contents .reservation-step .step02 .select-list button { margin: 0; }
+  .contents .reservation-step .step04 .step-cont .select-list button { padding-top: 144px; }
+  .contents .reservation-step .step04 .step-cont .select-list button i { width: 120px; height: 120px; }
+  .contents .reservation-step .step04 .step-cont .btn-group { display: block; }
+  .contents .reservation-step .step04 .info { font-size: 14px; line-height: 18px; }
+  .contents .reservation-step .step-cont { padding: 0; }
+  .contents .reservation-step .step-cont .select-list { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  .contents .reservation-step .step-cont .select-list button { width: 50%; height: auto; padding-top: 100px; }
+  .contents .reservation-step .step-cont .select-list button i { width: 90px; height: 90px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+  .contents .reservation-step .step-cont .select-list button + button { margin-left: 0; }
+  .contents .reservation-step .step-cont .btn-group { position: fixed; bottom: 0; display: block; height: 100px; padding-top: 30px; background-color: #fff; text-align: center; }
+  .contents .reservation-step .step-cont .times .tit { font-size: 15px; }
+  .contents .reservation-step .step-cont .result-text { padding-top: 74px; font-size: 30px; }
+  .contents .reservation-step .step-cont .result-text p { margin: 24px 0 0 0; font-size: 16px; line-height: 24px; }
+  .contents .accordion-wrap dl dt { font-size: 16px; line-height: 27px; }
+  .contents .accordion-wrap dl dt.cal, .contents .accordion-wrap dl dt.clock { background-size: 25px auto; }
+  .contents .accordion-wrap dl dt.clock + dd { padding-top: 12px; }
+  .contents .accordion-wrap dl dt button { top: 8px; height: 18px; width: 18px; background-size: 100%; }
+  .contents .accordion-wrap dl dd { padding: 48px 20px 43px 20px; }
+  .contents .accordion-wrap .cal-wrap, .contents .accordion-wrap .times { position: relative; z-index: 10; }
+  .contents .accordion-wrap .select-info { width: 100%; height: 100%; }
+  .contents .accordion-wrap .select-info .month { width: auto; top: 12px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+  .contents .accordion-wrap .select-info .month span { margin: 0 40px; }
+  .contents .accordion-wrap .select-info .check-box { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin-top: auto; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; padding: 0 20px 13px 20px; }
+  .contents .accordion-wrap .select-info .check-box span { padding-left: 20px; font-size: 12px; line-height: 16px; }
+  .contents .accordion-wrap .select-info .check-box span::after { width: 16px; height: 16px; }
+  .contents .accordion-wrap .select-info .check-box span + span { margin: 0 0 0 12px; }
   .white-borad { padding: 20px 18px; }
   .white-borad .more { width: 3px; height: 15px; right: 16px; top: 25px; background-size: 100%; }
+  .white-borad .more .list { position: fixed; left: 0; top: 0; width: 100%; height: 100%; padding: 0 16px 34px 16px; background-color: rgba(0, 0, 0, 0.5); z-index: 20; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+  .white-borad .more .list.active { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .white-borad .more .list button { padding: 16px 0; font-size: 16px; background-color: #809CFF; color: #fff; text-align: center; }
+  .white-borad .more .list button:first-child { border-radius: 6px 6px 0 0; }
+  .white-borad .more .list button:first-child + button { border-radius: 0 0 6px 6px; }
+  .white-borad .more .list button + button { border-top: 1px solid #AABBF5; }
+  .white-borad .more .list button:hover { background-color: #809CFF; }
+  .white-borad .more .list .cancel { display: block; padding: 14px 0; margin-top: 10px; font-size: 20px; line-height: 24px; font-weight: 700; color: #fff; text-align: center; background-color: #5577F0; border-radius: 6px; }
   .white-borad .user-info { left: -22px; }
   .white-borad .user-info .pic { width: 44px; height: 44px; }
   .white-borad .user-info .treatment { width: 36px; height: 36px; margin-top: 10px; }
@@ -475,5 +558,12 @@ html, body { overflow: hidden; height: 100%; }
   .comment-list li .desc { font-size: 13px; line-height: 18px; }
   .comment-list li .comment-util { margin-top: 10px; }
   .comment-list li .comment-util span { font-size: 12px; }
-  .comment-list li ul { margin-top: 10px; padding-top: 10px; } }
+  .comment-list li ul { margin-top: 10px; padding-top: 10px; }
+  .cal-wrap .day li { font-size: 15px; }
+  .cal-wrap .nums li button { font-size: 15px; }
+  .pop-wrap { padding: 0 16px; background-color: rgba(0, 0, 0, 0.5); }
+  .pop-wrap .pop { width: 100%; height: auto; padding: 70px 20px 20px 20px; }
+  .pop-wrap .pop strong { padding-top: 92px; font-size: 20px; line-height: 24px; background-size: 46px auto; }
+  .pop-wrap .pop p { margin: 32px 0 62px 0; font-size: 13px; line-height: 16px; }
+  .pop-wrap .pop .close { position: static; width: auto; height: auto; text-indent: 0; background: none; font-size: 20px; color: #fff; font-weight: 700; } }
 /*# sourceMappingURL=style.css.map */

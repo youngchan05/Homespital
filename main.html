@@ -35,7 +35,8 @@
         </div>
         <!-- /.header -->
         <div class="contents">
-            <div class="left-menu is_pc">
+            <div class="left-menu">
+                <!-- 활성화 시 클래스 active 추가해주세요-->
                 <ul>
                     <li>
                         <a href="#" class="menu01 active"><span class="active">게시물</span><p class="num">100</p></a>
@@ -50,11 +51,17 @@
                         <a href="#" class="menu04"><span>내 진료 내역</span></a>
                     </li>
                 </ul>
-                <p class="copy">@2020 by Homespital. All Rights reserved.</p>
+                <p class="copy is_pc">@2020 by Homespital. All Rights reserved.</p>
+                <button type="close" class="is_mobile">닫기</button>
             </div>
             <!-- /.left-menu -->
-            <div class="reservation-section is_pc">
+            <div class="reservation-section">
                 <a href="" class="direct">예약하기</a>
+                <div class="mobile-header is_mobile">
+                    <button type="button">이전</button>
+                    <strong>예약하기</strong>
+                    <button type="button">취소</button>
+                </div>
                 <ul>
                     <li class="on">
                         <p>
@@ -63,7 +70,7 @@
                         </p>
                         <span>진료 선택 완료</span>
                     </li>
-                    <li class="result">
+                    <li>
                         <p>
                             적절한 진료과목을 선택하여 주세요.<br>
                             검진을 선택한 경우에 원하시는 검진항목을 체크해주세요.
@@ -86,9 +93,9 @@
                         <p>2020. 3. 26 (목) 오전 11:00<br> <strong>내과 내원진료 </strong> <button type="button"></button></p>
                     </div>
                 </div>
-                <div class="reservation-step active">
+                <div class="reservation-step">
                     <!-- 활성화 시 클래스 active 추가해주세요-->
-                    <div class="step01 ">
+                    <div class="step01 on">
                         <div class="step-header">
                             <div class="icon-group">
                                 <span class=>
@@ -98,6 +105,8 @@
                             <strong>
                                 Ryan님의<br>예약을 도와드리겠습니다
                             </strong>
+                            <strong class="mobile-info">내원진료·왕진진료·건강검진<br>
+                                아래의 3가지중 원하시는 진료를 선택하여 주세요.</strong>
                         </div>
                         <div class="step-cont">
                             <div class="select-list">
@@ -116,7 +125,7 @@
                                 </button>
                             </div>
                             <div class="btn-group">
-                                <button type="button">이전단계</button>
+                                <button type="button" class="is_pc">이전단계</button>
                                 <button type="button" class="on">다음단계</button>
                             </div>
                         </div>
@@ -135,6 +144,8 @@
                             <strong>
                                 Ryan님의 내원진료<br> 예약을 도와드리겠습니다
                             </strong>
+                            <strong class="mobile-info">적절한 진료과목을 선택하여 주세요.<br>
+                                검진을 선택한 경우에 원하시는 검진항목을 체크해 주세요.</strong>
                         </div>
                         <div class="step-cont">
                             <div class="select-list">
@@ -164,7 +175,7 @@
                                 </button>
                             </div>
                             <div class="btn-group">
-                                <button type="button">이전단계</button>
+                                <button type="button"  class="is_pc">이전단계</button>
                                 <button type="button" class="on">다음단계</button>
                             </div>
                         </div>
@@ -183,6 +194,7 @@
                             <strong>
                                 Ryan님의 내원진료<br> 예약을 도와드리겠습니다
                             </strong>
+                            <strong class="mobile-info">예약을 원하시는 날짜와 시간을 선택해 주세요.</strong>
                         </div>
                         <div class="step-cont">
                             <div class="accordion-wrap">
@@ -291,11 +303,15 @@
                                 <strong>3.26 목요일<br>오전 11:00</strong>
                                 <p>위의 스케줄로 예약결제를 <span>다음단계</span><br>에서 진행해 드리겠습니다.</p>
                             </div>
+                            <div class="btn-group">
+                                <button type="button"  class="is_pc">이전단계</button>
+                                <button type="button" class="on">다음단계</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="step04 on">
+                    <div class="step04">
                         <div class="step-header">
-                            <div class="icon-group">
+                            <div class="icon-group ">
                                 <span class=>
                                     <img src="./images/icon_step_white.svg" alt="">
                                 </span>
@@ -307,6 +323,8 @@
                             <strong>
                                 Ryan님의 3.26(목) 오전 11: 00 내과 내원진료<br> 예약을 도와드리겠습니다
                             </strong>
+                            <strong class="mobile-info">본인확인 및 예약결제 후 예약완료<br> 확인 및 현황은 아
+                                래에 나타납니다.</strong>
                         </div>
                         <div class="step-cont">
                             <div class="select-list">
@@ -320,10 +338,14 @@
                                 </button>
                             </div>
                             <p class="info">
-                                본인확인은 건강보험 확인을 위해 사용됩니다.<br> 건강검진은 선결제, 그 외 진료예약은 예약금 선결제로 이뤄집니다.
+                                본인확인은 건강보험 확인을 위해 사용됩니다.<br> 건강검진은 선결제, 그 외 진료예약은<br class="is_mobile"> 예약금 선결제로 이뤄집니다.
                             </p>
+                            <div class="btn-group">
+                                <button type="button" class="on">예약완료</button>
+                            </div>
                         </div>
                     </div>
+                     <!-- step 활성화 시 클래스 on 추가해주세요-->
                 </div>
             </div>
             <div class="white-borad is_pc">
@@ -358,8 +380,14 @@
                 <button type="button" class="write on">작성하기</button>
             </div>
             <div class="white-borad">
-                <a href="" class="more">
-                </a>
+                <div class="more">
+                    <button type="button"></button>
+                    <div class="list active">
+                        <button type="button">게시물 수정</button>
+                        <button type="button">게시물 삭제</button>
+                        <a href="#" class="cancel">취소</a>
+                    </div>
+                </div>
                 <div class="user-info">
                     <span class="pic ">
                         <!-- <img src="./images/img_profile01.png" alt=""> -->
@@ -461,7 +489,21 @@
                                         전문가가 이렇게 소개해주시니 시간과 비용도 절약되고 너무 좋네요. 방금 예약신청 드렸습니다.
                                     </p>
                                 </div>
-                                
+                                <div class="comment-util">
+                                    <span>답글1</span> · 
+                                    <span><a href="#">답글달기</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="comment">
+                                    <span class="pic">
+                                        <img src="./images/img_Profile.png" alt="">
+                                    </span>
+                                    <div class="textarea">
+                                        <input type="text" placeholder="댓글을 달아주세요.">
+                                        <button type="button">게시</button>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </li>
@@ -472,6 +514,7 @@
                     </span>
                     <div class="textarea">
                         <textarea name="" id="" cols="30" rows="1" placeholder="댓글을 달아주세요."></textarea>
+                        <button type="button">게시</button>
                     </div>
                 </div>
             </div>
@@ -484,10 +527,11 @@
     </div>
     <!-- /.wrap -->
     <div class="pop-wrap">
+         <!-- 활성화 시 클래스 active 추가해주세요-->
         <div class="pop">
             <strong class="tit">Ryan님의<br> 3.26(목) 오전 11: 00 내과 내원진료 <br>예약이 완료되었습니다.</strong>
             <p>자세한 예약사항은 우측 예약하기 하단과<br> 좌측 나의진료 내역에서 확인하실수 있습니다.<br> 그밖의 문의사항은 피드를 통해 연락주세요.<br> 감사합니다.</p>
-            <button type="button" class="close"></button>
+            <button type="button" class="close">확인</button>
         </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>

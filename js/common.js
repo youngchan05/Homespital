@@ -34,4 +34,15 @@ $(function(){
         })
     }
     popUp();
+    function moreShow(){
+        $selector = $('.white-borad .more > button');
+        $selector.on('click',function(){
+            $(this).siblings().toggleClass('active');
+        })
+        $close = $('.white-borad .more  .cancel');
+        $close.on('click',function(){
+            $(this).parent().toggleClass('active');
+        })
+    }
+    moreShow();
 })
