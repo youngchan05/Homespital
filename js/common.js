@@ -45,4 +45,17 @@ $(function(){
         })
     }
     moreShow();
+    function fileShow(){
+        $selector = $('.upload > button');
+        $selector.on('click',function(){
+            console.log($(this).siblings())
+            $(this).siblings().toggleClass('active');
+        })
+        $close = $('.upload .cancel');
+        $close.on('click',function(){
+            $(this).parent().toggleClass('active');
+        })
+    }
+    fileShow();
+    moreShow();
 })
