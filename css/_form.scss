@@ -1,0 +1,117 @@
+.form-wrap {
+    display:none;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    align-items: flex-end;
+    justify-content: center;
+    background-color:rgba($color: #000000, $alpha: .5);
+    .form-section{
+        position: relative;
+        width:600px;
+        padding:108px 73px 32px 43px;
+        margin-bottom:172px;
+        box-shadow: 0 90px 30px rgba($color: #657DA8, $alpha: .5);
+        border-radius: 32px;
+        background-color:#fff;
+        text-align: center;
+        .close {
+            position: absolute;
+            right:48px;
+            top:38px;
+            width:30px;
+            height:30px;
+            transform: translateY(50%);
+            @include bg(btn_close2);
+            text-indent: -99999px;
+            overflow: hidden;
+        }
+        .pic {
+            position: absolute;
+            left:60px;
+            top:0;
+            transform: translateY(-50%);
+        }
+        .input-set {
+            position:relative;
+            input {
+                @each $obj in email ,password {
+                    &.#{$obj}{
+                        @include bg(icon_#{$obj} ,$pos :left 24px bottom 20px);
+                        &:focus{
+                            background-position:24px calc(50% - -10px);
+                        }
+                    }
+                }
+                width:100%;
+                padding:40px 110px 20px 83px;
+                border-bottom:1px solid #DDDDDD;
+                font-size:25px;
+                line-height:38px;
+                color:#000;
+                text-align: left;
+                &:focus {
+                    border-radius: 6px;
+                    box-shadow: 0 20px 20px rgba($color: #657DA8, $alpha: .5);
+                    + a {
+                        display:none;
+                        + span {
+                            display:block;
+                        }
+                    }
+                }
+                + a {
+                    position:absolute;
+                    right:30px;
+                    bottom:20px;
+                    font-size:16px;
+                    line-height:38px;
+                    color:#809CFF;
+                }
+                &::placeholder {
+                    font-size:16px;
+                    color:#909090;
+                }
+            }
+            span {
+                display:none;
+                position: absolute;
+                left:85px;
+                top:13px;
+                font-size:15px;
+                line-height:36px;
+                color:#909090;
+            }
+            + .input-set {
+                margin-top:30px;
+            }
+        }
+        .btn-form {
+            display:block;
+            width:100%;
+            margin-top:67px;
+            margin-bottom:32px;
+            padding:20px 0;
+            border-radius: 6px;
+            text-align: center;
+            font-size:32px;
+            font-weight: 700;
+            line-height:37px;
+            background-color:#5577F0;
+            color:#fff;
+        }
+        .sign-link {
+            display:inline-block;
+            padding-bottom:5px;
+            font-size:16px;
+            line-height:18px;
+            color:#809CFF;
+            border-bottom:1px solid #809CFF;
+        }
+    }
+    &.active {
+        display:flex;
+    }
+}
