@@ -1296,6 +1296,9 @@ html ,body {
             font-size:20px;
             line-height:30px;
             color:#333333;
+            i {
+                font-style: normal;
+            }
         }
     }
     .info-list {
@@ -1330,6 +1333,12 @@ html ,body {
     .wrap {
         padding-top:20px;
         padding-bottom:70px;
+        &.sub {
+           padding-bottom:0;
+           .contents {
+               padding-left:16px;
+           }
+        }
         .mobile-tab {
             display:flex;
             position: fixed;
@@ -2045,6 +2054,184 @@ html ,body {
                 color:#fff;
                 font-weight: 700;
             }
+        }
+    }
+    .diagnosis-section {
+        padding-top:18px;
+        .service-wrap {
+            padding-left:0;
+            .desc {
+                font-size:14px;
+                line-height:20px;
+            }
+            &.step01 ,
+            &.step02 {
+                background-position: center;
+                background-size:100%;
+            }
+            .pic {
+                position: static;
+                img {
+                    width:100%;
+                }
+            }
+            .ledger-info{
+                padding-top:30px;
+                text-align: center;
+                strong {
+                    font-size:30px;
+                    span {
+                        font-size:20px;
+                    }
+                }
+                ul {
+                    li {
+                        font-size:14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .btn-group {
+                position: relative;
+                justify-content: center;
+                transform: translateY(0);
+                padding:102px 0;
+                margin-bottom:60px;
+                button {
+                    width:92px;
+                    height:92px;
+                }
+            }
+            .service-list {
+                display:none;
+            }
+            .tab-cont {
+                display:block;
+                height:auto;
+                text-align: center;
+                padding-bottom:0;
+                strong {
+                    font-size:16px;
+                }
+                span {
+                    font-size:12px;
+                }
+                p {
+                    margin-top:0;
+                    font-size:14px;
+                    line-height:20px;
+                }
+                + .tab-cont  {
+                    margin-top:30px;
+                }
+            }
+        }
+        .info-list {
+            position: relative;
+            padding-top:86%;
+            .map {
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                margin-top:0;
+                img {
+                    width:100%;
+                }
+            }
+            ul {
+                margin-top:28px;
+                li {
+                    padding-left:40px;
+                    font-size:14px;
+                    line-height:20px;
+                    color:#5577F0;
+                    span{
+                        color:#000;
+                    }
+                    + li {
+                        margin-top:4px;
+                    }
+                }
+            }
+        }
+        .inner-box {
+            & + .inner-box {
+                margin-top:30px;
+            }
+        }
+        .app-box {
+            position: relative;
+            left:-16px;
+            width:calc(100% + 32px);
+            margin-top:30px;
+            background-color:#5577F0;
+            padding:30px 0 40px 0;
+            text-align: center;
+            p {
+                font-size:14px;
+                line-height:20px;
+                color:#fff;
+            }
+            .copy {
+                font-size:12px;
+                line-height:20px;
+                color:#fff;
+            }
+            .link {
+                display:flex;
+                justify-content: center;
+                margin:38px 0;
+                a {
+                    display:inline-block;
+                    width:130px;
+                    height:48px;
+                    @each $obj in goggle , store {
+                        &.#{$obj}{
+                            @include bg(bg_#{$obj},$type:svg);
+                        }
+                    }
+                    + a {
+                        margin-left:40px;
+                    }
+                }
+            }
+        }
+        .time-list {
+            li {
+                position: relative;
+                padding-top:24px;
+                font-size:14px;
+                line-height:20px;
+                text-align: center;
+                span {
+                    position: absolute;
+                    top:0;
+                    left:50%;
+                    transform: translateX(-50%);
+                    color:#809CFF;
+                    font-size:16px;
+                    line-height:20px;
+                }
+                + li {
+                    margin-top:14px;
+                }
+            }
+        }
+    }
+    .sub-tit {
+        display:inline-block;
+        width:100%;
+        text-align: center;
+        padding-left:0;
+        font-size:0;
+        line-height:36px;
+        margin-bottom:20px;
+        br {
+            display:none;
+        }
+        span {
+            font-size:30px;
         }
     }
 }
