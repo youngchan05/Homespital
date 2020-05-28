@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homespital</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <button class="is_mobile toggle-menu" type="button"></button>
+            <h1 class="logo">
+                <img src="./images/logo_main.png" alt="logo">
+            </h1>
+            <div class="search-box">
+                <button type="button"></button>
+                <input type="text" placeholder="Ryan님, 궁금한 내용을 검색해 보세요.">
+            </div>
+            <!-- /.search-box -->
+            <div class="util">
+                <a href="#" class="alarm on">
+                    <!--알람 활성화시 클래스 on 추가됩니다.-->
+                    <img src="./images/icon_alarm.png" alt="알람 아이콘">
+                </a>
+                <a href="#" class="setting">
+                    <img src="./images/icon_setting.png" alt="세팅 아이콘">
+                </a>
+                <a href="#" class="my-page">
+                    <img src="./images/img_Profile.png" alt="유저 이미지">
+                </a>
+            </div>
+            <!-- /.util -->
+        </div>
+        <!-- /.header -->
+        <div class="contents">
+            <div class="left-menu">
+                <!-- 활성화 시 클래스 active 추가해주세요-->
+                <ul>
+                    <li>
+                        <a href="#" class="menu01"><span class="">게시물</span><p class="num">100</p></a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu02"><span>병원 소개</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu03"><span>진료 안내</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu04 active"><span class="active">내 진료 내역</span></a>
+                    </li>
+                </ul>
+                <p class="copy is_pc">@2020 by Homespital. All Rights reserved.</p>
+                <button type="close" class="is_mobile">닫기</button>
+            </div>
+            <!-- /.left-menu -->
+            <div class="diagnosis-section">
+                <div class="inner-box">
+                    <strong class="sub-tit">홈스피탈의<br>
+                        <span>서비스</span></strong>
+                    <div class="service-wrap">
+                        <div class="btn-group service">
+                            <button type="button" data-selector="tab1" class="counsel"></button>
+                            <button type="button" data-selector="tab2" class="hd"></button>
+                            <button type="button" data-selector="tab3" class="cure"></button>
+                            <button type="button" data-selector="tab4" class="top opd"></button>
+                            <button type="button" data-selector="tab5" class="bottom checkup"></button>
+                        </div>
+                        <p class="desc">홈스피탈의 서비스는 상담, 외래, 왕진, 건진, 투석의 다섯 가지로
+                            오프라인 클리닉과 온라인 플랫폼을 통해 제공됩니다.</p>
+                        <div class="service-list">
+                            <ul>
+                                <li>
+                                    <a href="">의료상담 홈카운셀<br><span>HOME COUNSEL</span></a>
+                                </li>
+                                <li>
+                                    <a href="">외래진료 홈오피디<br><span>HOME OPD</span></a>
+                                </li>
+                                <li>
+                                    <a href="">방문진료 홈큐어<br><span>HOME CURE</span></a>
+                                </li>
+                                <li>
+                                    <a href="">건강검진 홈첵업<br><span>HOME CHECKUP</span></a>
+                                </li>
+                                <li>
+                                    <a href="">신장투석 홈에치디<br><span>HOME HD</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-cont" data-target="tab1">
+                            <strong>의료상담 홈카운셀<br><span>HOME COUNSEL</span></strong>
+                            <p>내과 중심의 전문 상담으로 나의 증상·질병에 대하여 전문의에게 상담할 수 있는 서비스입니다.</p>
+                        </div>
+                        <div class="tab-cont" data-target="tab2">
+                                                <strong>신장투석 홈에치디<br><span>HOME HD</span></strong>
+                            <p>신장 투석의 혁명을 선포할 수 있으리라 자부할 만큼 대표서비스중 하나로 삼색투석이 가능합니다.</p>
+                        </div>
+                        <div class="tab-cont" data-target="tab3">
+                                                <strong>방문진료 홈큐어<br><span>HOME CURE</span></strong>
+                            <p>예약 결재를 통한 전국 왕진서비스 입니다. 전국 어디든 예약을 통하여 집에서 진료를 받으세요.</p>
+                        </div>
+                        <div class="tab-cont" data-target="tab4">
+                                                <strong>외래진료 홈오피디<br><span>HOME OPD</span></strong>
+                            <p>환자 중심의 원스톱 진료로 나의 증상·질병에 대하여 전문의에게 상담할 수 있는 서비스입니다.</p>
+                        </div>
+                        <div class="tab-cont" data-target="tab5">
+                                                <strong>건강검진 홈첵업<br><span>HOME CHECKUP</span></strong>
+                            <p>필요한 건강검진만 가능합니다. 수요자 주도의 골라담기식 뷔페검진 서비스를 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    <strong class="sub-tit">홈스피탈의<br>
+                        <span>진료시간</span></strong>
+                    <div class="service-wrap">
+                        <div class="time-list">
+                            <ul>
+                                <li>
+                                    외래 : 월~토(공휴일 포함) 08시~20시, 노브레이크
+                                </li>
+                                <li>
+                                    왕진 : 월~토(공휴일 포함) 21시~25시, 일 08시~25시
+                                </li>
+                                <li>
+                                    투석 : 월~토(공휴일 포함) 08시~22시
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    <strong class="sub-tit">
+                        <span>주소<br>연락처</span></strong>
+                    <div class="service-wrap">
+                        <p class="desc">
+                            주소 04418 서울시 용산구 한남대로 76 한남프라자 5층 주차 건물앞 무료주차장과 일신빌딩 유료주차장
+                        </p>
+                        <div class="info-list">
+                            <ul>
+                                <li class=""><span class="tit">전국</span>1566-7566</li>
+                                <li class=""><span class="tit">유선</span>02-796-7566</li>
+                                <li class=""><span class="tit">팩스</span>02-796-7560</li>
+                                <li class=""><span class="tit">메일</span>homespital@hotmail.com</li>
+                            </ul>
+                            <div class="map">
+                                <img src="images/map.png" style="width:100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /.wrap -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html> 

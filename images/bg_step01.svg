@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="191" viewBox="0 0 400 191">
+  <g id="도식_01" transform="translate(-457 -327.53)">
+    <g id="HOME" transform="translate(457 366.716)">
+      <g id="BACK_DECO" data-name="BACK DECO" transform="translate(0 0)">
+        <circle id="타원_1" data-name="타원 1" cx="26" cy="26" r="26" transform="translate(0 57.814)" fill="#e3ebff"/>
+        <ellipse id="타원_2" data-name="타원 2" cx="12" cy="11" rx="12" ry="11" transform="translate(102 32.814)" fill="#e3ebff"/>
+        <circle id="타원_3" data-name="타원 3" cx="5.5" cy="5.5" r="5.5" transform="translate(33 -0.186)" fill="#e3ebff"/>
+      </g>
+      <g id="HOME-2" data-name="HOME" transform="translate(21.561 15.35)">
+        <g id="Icons" transform="translate(0 0)">
+          <g id="_373---Home-_Outline_" data-name="373---Home-(Outline)">
+            <path id="Path" d="M75.719,38.132,41.52,11.77,7.321,38.132a4.311,4.311,0,0,1-5.288-6.809l36.554-28.6L41.52,0l2.934,2.725,36.554,28.6a4.311,4.311,0,0,1-5.288,6.809Z" transform="translate(0.165)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-2" data-name="Path" stroke="#aabbf5" d="M14,25H31.249V36.5H14Z" fill="none" transform="translate(6.124 10.936)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-3" data-name="Path" stroke="#aabbf5" d="M14,39H31.249V53.374H14Z" fill="none" transform="translate(6.124 17.059)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-4" data-name="Path" stroke="#aabbf5" d="M32,25H49.249V36.5H32Z" fill="none" transform="translate(13.998 10.936)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-5" data-name="Path" stroke="#aabbf5" d="M75.719,38.132,41.52,11.77,7.321,38.132a4.311,4.311,0,0,1-5.288-6.809l36.554-28.6L41.52,0l2.934,2.725,36.554,28.6a4.311,4.311,0,0,1-5.288,6.809Z" fill="none" transform="translate(0.165)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-6" data-name="Path" stroke="#aabbf5" d="M39.061,8.188,6,33.672V76.914H72.121V33.672L39.061,8.188Z" fill="none" transform="translate(2.625 3.582)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-7" data-name="Path" stroke="#aabbf5" d="M32,39H49.249V63.436H32Z" fill="none" transform="translate(13.998 17.059)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-8" data-name="Path" stroke="#aabbf5" d="M0,59.937v0Z" fill="none" transform="translate(0 20.559)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-9" data-name="Path" stroke="#aabbf5" d="M3,59.937v0Z" fill="none" transform="translate(1.312 20.559)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-10" data-name="Path" stroke="#aabbf5" d="M55,59.937v0Z" fill="none" transform="translate(24.058 20.559)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-11" data-name="Path" stroke="#aabbf5" d="M58,59.937v0Z" fill="none" transform="translate(25.37 20.559)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-12" data-name="Path" stroke="#aabbf5" d="M0,49H0Z" fill="none" transform="translate(0 21.434)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-13" data-name="Path" stroke="#aabbf5" d="M0,54H0Z" fill="none" transform="translate(0 23.621)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-14" data-name="Path" stroke="#aabbf5" d="M52,49h0Z" fill="none" transform="translate(22.746 21.434)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-15" data-name="Path" stroke="#aabbf5" d="M52,54h0Z" fill="none" transform="translate(22.746 23.621)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-16" data-name="Path" stroke="#aabbf5" d="M20,39v0Z" fill="none" transform="translate(8.748 17.059)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-17" data-name="Path" stroke="#aabbf5" d="M14,44h0Z" fill="none" transform="translate(6.124 19.247)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-18" data-name="Path" stroke="#aabbf5" d="M14,28h0Z" fill="none" transform="translate(6.124 12.248)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Path-19" data-name="Path" stroke="#aabbf5" d="M32,30h0Z" fill="none" transform="translate(13.998 13.123)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="HOSPITAL" transform="translate(689.76 338.253)">
+      <g id="BACK_DECO-2" data-name="BACK DECO" transform="translate(89.236 167.24) rotate(-135)">
+        <circle id="타원_1-2" data-name="타원 1" cx="26.034" cy="26.034" r="26.034" transform="translate(0 58.246)" fill="#e3ebff"/>
+        <ellipse id="타원_2-2" data-name="타원 2" cx="11.473" cy="11.031" rx="11.473" ry="11.031" transform="translate(103.254 32.653)" fill="#e3ebff"/>
+        <ellipse id="타원_3-2" data-name="타원 3" cx="5.736" cy="5.295" rx="5.736" ry="5.295" transform="translate(33.535 0)" fill="#e3ebff"/>
+      </g>
+      <g id="HOSPITAL-2" data-name="HOSPITAL" transform="translate(46.818 49.344)">
+        <g id="Hotel-Services---Outline" transform="translate(0 0)">
+          <g id="_78--Hotel-Building--_Outline_" data-name="78--Hotel-Building--(Outline)">
+            <path id="Stroke-761" d="M4.008,69.591H68.444V0H4.008Z" transform="translate(1.147)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-762" d="M.008,59.155H74.754V54H.008Z" transform="translate(-0.008 15.591)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-763" d="M10.008,12.732h10.31V5H10.008Z" transform="translate(2.879 1.444)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-764" d="M10.008,23.732h10.31V16H10.008Z" transform="translate(2.879 4.62)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-765" d="M25.008,23.732h10.31V16H25.008Z" transform="translate(7.21 4.62)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-766" d="M40.008,23.732h10.31V16H40.008Z" transform="translate(11.541 4.62)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-767" d="M25.008,34.732h10.31V27H25.008Z" transform="translate(7.21 7.796)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-768" d="M40.008,34.732h10.31V27H40.008Z" transform="translate(11.541 7.796)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-769" d="M10.008,34.732h10.31V27H10.008Z" transform="translate(2.879 7.796)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-770" d="M25.008,12.732h10.31V5H25.008Z" transform="translate(7.21 1.444)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-771" d="M40.008,12.732h10.31V5H40.008Z" transform="translate(11.541 1.444)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-772" d="M29.008,57.465h10.31V42H29.008Z" transform="translate(8.365 12.126)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-773" d="M21.008,57.465h10.31V42H21.008Z" transform="translate(6.055 12.126)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+            <path id="Stroke-790" d="M23.008,38H38.473" transform="translate(6.633 10.971)" fill="none" stroke="#aabbf5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="_" data-name="+" transform="translate(604 482.53)" fill="#e3ebff" font-size="144" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+  </g>
+</svg>

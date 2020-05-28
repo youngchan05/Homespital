@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.032" height="60.983" viewBox="0 0 60.032 60.983">
+  <g id="Page-1" transform="translate(0.532 0.483)">
+    <g id="Icons" transform="translate(-1080 -1077)">
+      <g id="_32---Chat-_Outline_" data-name="32---Chat-(Outline)" transform="translate(1081 1078)">
+        <path id="Path" d="M30,18a3,3,0,1,1-3-3,3,3,0,0,1,3,3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+        <path id="Path-2" data-name="Path" d="M41,18a3,3,0,1,1-3-3,3,3,0,0,1,3,3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+        <path id="Path-3" data-name="Path" d="M52,18a3,3,0,1,1-3-3,3,3,0,0,1,3,3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+        <path id="Stroke-58" d="M37.5.017C26.73.017,18,7.845,18,17.5a16.143,16.143,0,0,0,3.225,9.627C20.957,30.318,20.188,34.812,18,37c0,0,6.686-.938,11.214-3.673A21.316,21.316,0,0,0,37.5,34.983C48.27,34.983,57,27.155,57,17.5S48.27.017,37.5.017ZM32.793,30.948a41.772,41.772,0,0,1-3.579,2.379Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+        <path id="Stroke-59" d="M25.442,55.615l-4.177-2.67a5.412,5.412,0,0,1-2.244-3.7V46a10,10,0,0,0,3.768-5.763,2.657,2.657,0,0,0,1.225-2.23V35.582A41.4,41.4,0,0,1,18,37c2.188-2.188,2.957-6.682,3.225-9.873a16.585,16.585,0,0,1-2.549-5.1A13.765,13.765,0,0,0,13.021,21c-10.8,0-10,8-10,8v3.126a3.625,3.625,0,0,0-.993,2.335v3.546a2.657,2.657,0,0,0,1.225,2.23A10,10,0,0,0,7.021,46v3.24a5.409,5.409,0,0,1-2.245,3.7L.6,55.615A1.3,1.3,0,0,0,1.3,58H24.745a1.294,1.294,0,0,0,.7-2.385Z" fill="none" stroke="#fff" stroke-width="3" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

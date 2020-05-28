@@ -12,7 +12,6 @@ $(function(){
         $('.contents').scroll(function () {
             var scrollValue = $('.contents').scrollTop(); 
             if(scrollValue > $headerH){
-                console.log(222)
                 $header.addClass('fix');
             }else {
                 $header.removeClass('fix');
@@ -48,7 +47,6 @@ $(function(){
     function fileShow(){
         $selector = $('.upload > button');
         $selector.on('click',function(){
-            console.log($(this).siblings())
             $(this).siblings().toggleClass('active');
         })
         $close = $('.upload .cancel');
@@ -58,4 +56,17 @@ $(function(){
     }
     fileShow();
     moreShow();
+    function serviceTab(){
+        var $tab = $('.btn-group.service button'),
+        $tabCont = $('.service-wrap .tab-cont'),
+        $idx = 0;
+        $tab.on('click',function(){
+            $('.service-list').hide();
+            $idx = $(this).index();
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            $tabCont.eq($idx).addClass('active').siblings().removeClass('active')
+        })
+    }
+    serviceTab();
 })
